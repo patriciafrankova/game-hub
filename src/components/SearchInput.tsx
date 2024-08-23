@@ -13,7 +13,6 @@ const SearchInput = () => {
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        console.log("submit");
         if (ref.current) {
           setSearchText(ref.current?.value);
           navigate("/");
